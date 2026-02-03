@@ -164,13 +164,14 @@ function upcaseItems() {
 // EXERCISES
 
 const clients = [
-    "john smith", // 0
-	"jane smith", // 1
-	"john doe", // 2
-	"jane doe", // 3
-	"john carpenter", // 4
-	"jane fonda" // 5
+    "john smith",       // 0
+	"jane smith",       // 1
+	"john doe",         // 2
+	"jane doe",         // 3
+	"john carpenter",   // 4
+	"jane fonda"        // 5
 ]
+
 // 1. Write a function `printAllNames` which uses a .forEach to console.log each of the client names 
 
 function printAllNames() {
@@ -223,3 +224,28 @@ function sortNames() {
     const newClientList = [...clients]
     return newClientList.sort()
 }
+
+const numbers = [10, 20, 30, 40, 55, 66, 77, 88, 99]
+
+// .map ---> create a new array that is a transformation of an old array
+
+// 1. Create a new array called `plusOne` which is every number in `numbers` mapped so that they are +1 more
+
+// plusOne --> [2,3,4,5,6,7]
+
+const plusOne = numbers.map( number => number + 1 )
+
+// 2. Create a new array called `squared` which is every number in `numbers` mapped so that they are squared
+
+// squared --> [1,4,9,16,25,36]
+
+const squared = numbers.map( number => number * number )
+
+// number ** 2 will square the number as well!
+
+// 3. Create a new array called `isEven` which maps each item in `numbers` to a new array and returns whether that item is even or odd with `true` / `false`
+// to determine even or odd you can use the `%` operator
+
+// isEven --> [false,true,false,true,false,true]
+
+const isEven = numbers.map( number => number % 2 === 0 )
