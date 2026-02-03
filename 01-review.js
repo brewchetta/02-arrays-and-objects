@@ -7,7 +7,7 @@ let greeting = "howdy there!"
 
 if (true) {
     let greeting = "bom dia"
-    console.log(greeting)
+    // console.log(greeting)
 }
 
 function changeHello() {
